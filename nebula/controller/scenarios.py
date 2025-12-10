@@ -1128,7 +1128,7 @@ class ScenarioManagement:
         elif self.scenario.topology == "Ring":
             # Create a partially connected network (ring-structured network)
             topologymanager = TopologyManager(scenario_name=self.scenario_name, n_nodes=self.n_nodes, b_symmetric=True)
-            topologymanager.generate_ring_topology(increase_convergence=True)
+            topologymanager.generate_ring_topology(increase_convergence=False)
         elif self.scenario.topology == "Star" and self.scenario.federation == "CFL":
             # Create a centralized network
             topologymanager = TopologyManager(scenario_name=self.scenario_name, n_nodes=self.n_nodes, b_symmetric=True)
